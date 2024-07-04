@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claire Dice Game</title>
+    <!-- link of h1 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./image/dice logo.jpg" type="dice logo" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Let‘s Play</h1>
+    <div class="dice-container">
+      <div class="player">
+        <h2 id="player1">Player 1</h2>
+        <img class="dice-img1" src="/image/dice6.png" alt="dice" />
+      </div>
+      <div class="player">
+        <h2 id="player2">Player 2</h2>
+        <img class="dice-img2" src="/image/dice6.png" alt="dice" />
+      </div>
+    </div>
+    <button class="roll-btn" onClick="collDice();">Roll The Dice</button>
+
+    <script src="./index.js"></script>
+  </body>
+  <footer>🎲 @ claire dice game copyright 🎲</footer>
+</html>
