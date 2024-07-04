@@ -7,19 +7,17 @@
 // document.getElementsById("player2")[0].textContent = "Player2:  "+ player2;
 // console.log(document.getElementsById("player1")[0]);
 
-
-
-function rollDice(){
+function rollDice() {
   //get the random number to set the dice picture
   var diceNum1 = Math.floor(Math.random() * 6) + 1;
   var diceNum2 = Math.floor(Math.random() * 6) + 1;
 
   //change the src of the dice img
   document.getElementsByClassName("dice-img1")[0].src =
-    "/image/dice" + diceNum1 + ".png";
+    "./image/dice" + diceNum1 + ".png";
 
   document.getElementsByClassName("dice-img2")[0].src =
-    "/image/dice" + diceNum2 + ".png";
+    "./image/dice" + diceNum2 + ".png";
 
   // change h1 to who win the game
   if (diceNum1 === diceNum2) {
@@ -32,4 +30,4 @@ function rollDice(){
 }
 
 const button = document.querySelector("button");
-button.addEventListener("click",rollDice);
+button.addEventListener("click", rollDice);
